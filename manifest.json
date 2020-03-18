@@ -1,0 +1,18 @@
+{
+	"name": "sbn redirect",
+	"version": "0.3",
+	"description": "Skips spam and shows the image on fastpic.ru.",
+	"permissions": ["tabs","webNavigation"],
+	"background": {
+		"scripts": ["fastpic_redirect.js"],
+		"persistent": false
+	},
+	"icons": {
+		"128": "icons/sbn_on.png"
+	},
+	"browser_action": {
+		"default_icon": "icons/sbn_on.png",
+		"default_title": "sbn redirect"
+	},
+	"manifest_version": 2
+}
