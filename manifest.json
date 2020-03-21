@@ -1,6 +1,6 @@
 {
 	"name": "sbn redirect",
-	"version": "0.3",
+	"version": "0.4",
 	"description": "Skips spam and shows the image on fastpic.ru.",
 	"permissions": ["tabs","webNavigation"],
 	"background": {
