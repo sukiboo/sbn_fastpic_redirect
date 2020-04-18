@@ -1,7 +1,7 @@
 {
 	"name": "sbn redirect",
-	"version": "0.4",
-	"description": "Skips spam and shows the image on fastpic.ru.",
+	"version": "0.5",
+	"description": "Skip spam and view the full image on fastpic.ru.",
 	"permissions": ["tabs","webNavigation"],
 	"background": {
 		"scripts": ["fastpic_redirect.js"],
