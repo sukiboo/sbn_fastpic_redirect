@@ -1,5 +1,5 @@
 {
-	"name": "sbn redirect",
+	"name": "sbn_fastpic_redirect",
 	"version": "0.5",
 	"description": "Skip spam and view the full image on fastpic.ru.",
 	"permissions": ["tabs","webNavigation"],
