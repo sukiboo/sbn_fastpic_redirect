@@ -25,8 +25,8 @@ chrome.webNavigation.onBeforeNavigate.addListener(function(tab) {
 	var cur_url = tab.url;
 	console.log('cur_url:', cur_url);
 
-	// remove '.html' and change 'view' to 'fullview' in the url
-	var new_url = cur_url.replace('.html', '').replace('view', 'fullview');
+	// remove '.html*' and change 'view' to 'fullview' in the url
+	var new_url = cur_url.substring(0, cur_url.indexOf('.html')).replace('view', 'fullview');
 	console.log('new_url:', new_url);
 
 	// start redirecting if the status allows
@@ -35,4 +35,4 @@ chrome.webNavigation.onBeforeNavigate.addListener(function(tab) {
 		chrome.tabs.update(tab.tabId, {url: new_url});
 	}
 
-}, {url: [{hostEquals: 'fastpic.ru', urlSuffix: '.html'}]});
+}, {url: [{hostPrefix: 'fastpic', pathSuffix: '.html'}]});
